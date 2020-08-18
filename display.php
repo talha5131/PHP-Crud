@@ -9,8 +9,7 @@ if ($readData) {
 } else {
     echo "Data Not Read";
 }
-
 ?>
-<script>
+<!-- <script>
     console.log("YES");
-</script>
+</script> -->

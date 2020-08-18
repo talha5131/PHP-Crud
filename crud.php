@@ -13,3 +13,6 @@ mysqli_query($conn, $insertQuery);
 
 header("Location: http://localhost/PHP-Crud/form.php");
 ?>
+<!-- <script>
+    console.log("YES");
+</script> -->

@@ -13,3 +13,6 @@ else{
     die("Connection Failed Because ".mysqli_connect_error());
 }
 ?>
+<!-- <script>
+    console.log("YES");
+</script> -->
