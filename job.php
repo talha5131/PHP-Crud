@@ -118,7 +118,7 @@ include("connection.php");
 
                 $readData =  mysqli_query($conn, $readQuery);
                 while ($result = mysqli_fetch_assoc($readData)) {
-                    echo '                <div class="ts-testimonial-content" style="margin: 0 25%;padding-bottom: 50px;">
+                    echo '<div class="ts-testimonial-content" style="margin: 0 25%;padding-bottom: 50px;">
                     <img src="public/assets/images/temping-logo.png" alt="testimonial" class="temping-logo">
                     <div class="row">
                         <div class="col-md-12 heading">
@@ -193,31 +193,3 @@ include("connection.php");
 // echo "Result Length Is " . $resultlength . "<br>";
 // echo $result['name'] . " " . $result['email'] . " " . $result['phone_number']. "<br>";
 ?>
-<table>
-    <tr>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Phone Number</th>
-    </tr>
-
-    <?php
-    if ($readData) {
-        // $i = 1;
-        // echo "Data Read";
-        while ($result = mysqli_fetch_assoc($readData)) {
-            echo "<tr>
-        <td>" . $result['name'] . "</td>
-        <td>" . $result['email'] . "</td>
-        <td>" . $result['phone_number'] . "</td>
-        </tr>";
-            // $i++;
-        }
-    } else {
-        // echo "Data Not Read";
-    }
-    // echo $result['name'] . " " . $result['email'] . " " . $result['phone_number'];
-    ?>
-    <!-- <script>
-console.log("YES");
-</script> -->
-</table>
